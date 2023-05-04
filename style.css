@@ -1,0 +1,44 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica;
+}
+
+.container {
+    width: 60%;
+    padding: 15px;
+    margin: 25px auto;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(auto-fill, minmax(150px, 1fr));
+    margin: 15px 0 0;
+    border: 1px solid #000;
+}
+
+.content .square {
+    border: 1px solid #000;
+    height: 150px;
+}
+
+.mole {
+    background: url(imgs/mol.png) no-repeat center center / cover;
+}
